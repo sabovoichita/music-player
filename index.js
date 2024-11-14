@@ -1,3 +1,17 @@
+// const printGreeting = () => {
+//     console.log("Hello there!");
+//   };
+//   printGreeting();
+
+//   const printMessage = (org) => {
+//     console.log(`${org} is awesome!`);
+//   };
+//   printMessage("freeCodeCamp");
+
+//   const addTwoNumbers = (num1, num2) => num1 + num2;
+
+//   console.log(addTwoNumbers(3, 4));
+
 const playlistSongs = document.getElementById("playlist-songs");
 const playButton = document.getElementById("play");
 const pauseButton = document.getElementById("pause");
@@ -85,17 +99,3 @@ let userData = {
   currentSong: null,
   songCurrentTime: 0,
 };
-
-const printGreeting = () => {
-  console.log("Hello there!");
-};
-printGreeting();
-
-const printMessage = (org) => {
-  console.log(`${org} is awesome!`);
-};
-printMessage("freeCodeCamp");
-
-const addTwoNumbers = (num1, num2) => num1 + num2;
-
-console.log(addTwoNumbers(3, 4));
