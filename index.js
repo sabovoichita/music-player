@@ -178,6 +178,9 @@ const deleteSong = (id) => {
     resetButton.appendChild(resetText);
     resetButton.addEventListener("click", () => {
       userData.songs = [...allSongs];
+      renderSongs(sortSongs());
+      setPlayButtonAccessibleText();
+      resetButton.remove();
     });
   }
 };
