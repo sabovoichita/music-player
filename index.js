@@ -114,12 +114,14 @@ const playSong = (id) => {
   userData.currentSong = song;
   playButton.classList.add("playing");
 
+  highlightCurrentSong();
   audio.play();
 };
 
 const pauseSong = () => {
   userData.songCurrentTime = audio.currentTime;
   playButton.classList.remove("playing");
+
   audio.pause();
 };
 
