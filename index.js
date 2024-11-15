@@ -174,6 +174,8 @@ const deleteSong = (id) => {
     const resetText = document.createTextNode("Reset Playlist");
     resetButton.id = "reset";
     resetButton.ariaLabel = "Reset playlist";
+    playlistSongs.appendChild(resetButton);
+    resetButton.appendChild(resetText);
   }
 };
 
