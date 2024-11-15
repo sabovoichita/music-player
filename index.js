@@ -191,6 +191,8 @@ const renderSongs = (array) => {
   playlistSongs.innerHTML = songsHTML;
 };
 
+const setPlayButtonAccessibleText = () => {};
+
 const getCurrentSongIndex = () => {
   return userData?.songs.indexOf(userData?.currentSong);
 };
