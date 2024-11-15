@@ -183,6 +183,8 @@ const highlightCurrentSong = () => {
   );
 };
 
+playlistSongElements.forEach((songEl) => {});
+
 pauseButton.addEventListener("click", pauseSong);
 
 nextButton.addEventListener("click", playNextSong);
