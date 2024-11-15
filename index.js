@@ -102,7 +102,9 @@ let userData = {
 
 const playSong = (id) => {
   const song = userData?.songs.find((song) => song.id === id);
-  console.log(song);
+  //   console.log(song);
+  audio.src = song.src;
+  audio.title = song.title;
 };
 console.log(playSong(1));
 
