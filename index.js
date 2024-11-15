@@ -178,6 +178,9 @@ playButton.addEventListener("click", () => {
 
 const highlightCurrentSong = () => {
   const playlistSongElements = document.querySelectorAll(".playlist-song");
+  const songToHighlight = document.getElementById(
+    `song-${userData?.currentSong?.id}`
+  );
 };
 
 pauseButton.addEventListener("click", pauseSong);
