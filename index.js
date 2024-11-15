@@ -117,6 +117,8 @@ const playSong = (id) => {
   audio.play();
 };
 
+pauseButton.addEventListener("click", pauseSong);
+
 const pauseSong = () => {
   userData.songCurrentTime = audio.currentTime;
   playButton.classList.remove("playing");
