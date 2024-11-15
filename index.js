@@ -110,6 +110,7 @@ const playSong = (id) => {
   } else {
     audio.currentTime = userData?.songCurrentTime;
   }
+  userData.currentSong = song;
 };
 console.log(playSong(1));
 
