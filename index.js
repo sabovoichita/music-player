@@ -143,6 +143,21 @@ const playPreviousSong = () => {
   }
 };
 
+const highlightCurrentSong = () => {
+  const playlistSongElements = document.querySelectorAll(".playlist-song");
+  const songToHighlight = document.getElementById(
+    `song-${userData?.currentSong?.id}`
+  );
+
+  playlistSongElements.forEach((songEl) => {
+    songEl.removeAttribute("aria-current");
+  });
+
+  if (songToHighlight) {
+    songToHighlight.setAttribute("aria-current", "true");
+  }
+};
+
 const renderSongs = (array) => {
   const songsHTML = array
     .map((song) => {
@@ -174,17 +189,6 @@ playButton.addEventListener("click", () => {
   } else {
     playSong(userData?.currentSong.id);
   }
-});
-
-const highlightCurrentSong = () => {
-  const playlistSongElements = document.querySelectorAll(".playlist-song");
-  const songToHighlight = document.getElementById(
-    `song-${userData?.currentSong?.id}`
-  );
-};
-
-playlistSongElements.forEach((songEl) => {
-  songEl.removeAttribute("aria-current");
 });
 
 pauseButton.addEventListener("click", pauseSong);
