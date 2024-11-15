@@ -183,7 +183,9 @@ const highlightCurrentSong = () => {
   );
 };
 
-playlistSongElements.forEach((songEl) => {});
+playlistSongElements.forEach((songEl) => {
+  songEl.removeAttribute("aria-current");
+});
 
 pauseButton.addEventListener("click", pauseSong);
 
