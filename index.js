@@ -102,7 +102,7 @@ let userData = {
 
 const playSong = (id) => {
   const song = userData?.songs.find((song) => song.id === id);
-  console.log("playing: ", song);
+  //   console.log("playing: ", song);
   audio.src = song.src;
   audio.title = song.title;
 
@@ -115,6 +115,7 @@ const playSong = (id) => {
   playButton.classList.add("playing");
 
   highlightCurrentSong();
+  setPlayerDisplay();
   audio.play();
 };
 
