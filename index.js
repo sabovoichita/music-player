@@ -114,7 +114,10 @@ const playSong = (id) => {
   playButton.classList.add("playing");
   audio.play();
 };
-console.log(playSong(1));
+
+playButton.addEventListener("click", () => {});
+
+// console.log(playSong(2));
 
 const renderSongs = (array) => {
   const songsHTML = array
