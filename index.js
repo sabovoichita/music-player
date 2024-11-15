@@ -176,6 +176,10 @@ playButton.addEventListener("click", () => {
   }
 });
 
+const highlightCurrentSong = () => {
+  const playlistSongElements = document.querySelectorAll(".playlist-song");
+};
+
 pauseButton.addEventListener("click", pauseSong);
 
 nextButton.addEventListener("click", playNextSong);
