@@ -105,6 +105,9 @@ const playSong = (id) => {
   //   console.log(song);
   audio.src = song.src;
   audio.title = song.title;
+  if (userData?.currentSong === null || userData?.currentSong.id !== song.id) {
+    audio.currentTime = 0;
+  }
 };
 console.log(playSong(1));
 
